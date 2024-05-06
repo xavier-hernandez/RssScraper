@@ -103,7 +103,8 @@ namespace RssScraper
                 return false;
             }
 
-            return uri.Host.Contains("youtube.com", StringComparison.OrdinalIgnoreCase);
+            return uri.Host.Contains("youtube.com", StringComparison.OrdinalIgnoreCase) || uri.Host.Contains("youtu.be", StringComparison.OrdinalIgnoreCase);
+
         }
 
         public static string GetListValueFromUrl(string url)
